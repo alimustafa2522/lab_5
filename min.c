@@ -1,18 +1,19 @@
 #include<stdio.h>
-void min(int ,int ,int); // declare function protype;
+int minimum(int ,int ,int); // declare function protype;
 
 
-int min(int x , int y ,int z)
+int minimum(int x , int y ,int z)
 {
-    if(x>y && x>z)
+    if(x<y && x<z)
     {
         return x;
     }
-    else if(y>x && y>z)
+    else if(y<x && y<z)
     {
         return y;
     }
     else{
+        
         return z;
     }
 }
@@ -32,5 +33,6 @@ int main()
 
     // input through user;
 
-    min(int a , int b , int c);
+    printf("THE smallest number is %d",minimum(a,b,c));
+    
 }
